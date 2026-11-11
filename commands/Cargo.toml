@@ -1,0 +1,14 @@
+[package]
+name = "commands"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[profile.dev]
+panic = "abort"
+
+opt-level = "z"
+[profile.release]
+panic = "abort"
+opt-level = "z"
