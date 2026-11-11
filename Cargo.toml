@@ -2,5 +2,11 @@
 members = [
     "software",
     "commands",
+    "arduino",
 ]
 resolver = "2"
+
+[profile.dev-avr]
+inherits = "dev"
+opt-level = "s"
+panic = "abort"

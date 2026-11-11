@@ -22,9 +22,10 @@ name = "arduino"
 version = "0.1.0"
 dependencies = [
  "arduino-hal",
- "commands 0.1.0",
  "embedded-hal 1.0.0",
+ "nb 1.1.0",
  "panic-halt",
+ "ufmt",
 ]
 
 [[package]]
