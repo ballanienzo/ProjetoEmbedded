@@ -1,10 +1,11 @@
-[build]
-target = "avr-none"
-rustflags = ["-C", "target-cpu=atmega2560"]
-    rustdocflags = ["-C", "target-cpu=atmega2560"]
+[unstable]
+build-std = ["core"]
 
 [target.'cfg(target_arch = "avr")']
 runner = "ravedude"
+rustflags = ["-C", "target-cpu=atmega2560"]
+    rustdocflags = ["-C", "target-cpu=atmega2560"]
 
-[unstable]
-build-std = ["core"]
+[alias]
+flash = "run -p arduino --target avr-none --profile avr"
+

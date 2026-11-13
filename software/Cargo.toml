@@ -5,3 +5,6 @@ edition = "2024"
 
 [dependencies]
 commands = { path = "../commands/" }
+notes = { path = "../notes" }
+postcard = { version = "1.0", features = ["use-std"] }
+serialport = "4.10.1"
